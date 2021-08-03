@@ -90,7 +90,8 @@
     content: $icon-video;
   }
 
-  li.coursepresentation:before {
+  li.coursepresentation:before,
+  li.coursepresentationkid:before {
     content: $icon-presentation;
   }
 

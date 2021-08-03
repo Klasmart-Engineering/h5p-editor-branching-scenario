@@ -83,8 +83,8 @@
   .editor-overlay-library{
     .form-manager {
       border: 0;
-      
-      &.libwrap { 
+
+      &.libwrap {
         > .form-manager-form {
           padding: 0;
           border: 0;
@@ -120,7 +120,8 @@
     padding-right: 0.5em;
   }
 
-  &.editor-overlay-icon-course-presentation:before {
+  &.editor-overlay-icon-course-presentation:before,
+  &.editor-overlay-icon-course-presentationkid:before {
     content: $icon-presentation;
   }
 

@@ -129,7 +129,7 @@ export default class EditorOverlay extends React.Component {
     if (fm) {
       fm.on('formopened', e => {
         const library = this.findField('type').params.library.split(' ')[0];
-        if (library === "H5P.CoursePresentation" || library === "H5P.InteractiveVideo" ) {
+        if (library === "H5P.CoursePresentationKID" || library === "H5P.InteractiveVideo" ) {
           this.setState({ isSubFrom: true });
           this.handleVisibilityOfFields(false);
         }
@@ -137,7 +137,7 @@ export default class EditorOverlay extends React.Component {
 
       fm.on('formclose', e => {
         const library = this.findField('type').params.library.split(' ')[0];
-        if (library === "H5P.CoursePresentation" || library === "H5P.InteractiveVideo" ) {
+        if (library === "H5P.CoursePresentationKID" || library === "H5P.InteractiveVideo" ) {
           this.setState({ isSubFrom: false });
           this.handleVisibilityOfFields(true);
         }
@@ -175,7 +175,7 @@ export default class EditorOverlay extends React.Component {
     }
 
     // Set individual overrides depending on interaction type
-    if (machineName === 'H5P.CoursePresentation') {
+    if (machineName === 'H5P.CoursePresentationKID') {
       this.overrideBooleanField(
         requiresFinishingField.$item,
         {
@@ -317,7 +317,7 @@ export default class EditorOverlay extends React.Component {
       this.findField('forceContentFinished').$item[0].style.display = "block";
       this.findField('contentBehaviour').$item[0].style.display = "block";
     }
-    else{ 
+    else{
       this.findField('showContentTitle').$item[0].style.display = "none";
       this.findField('forceContentFinished').$item[0].style.display = "none";
       this.findField('contentBehaviour').$item[0].style.display = "none";
@@ -380,7 +380,7 @@ export default class EditorOverlay extends React.Component {
     if (this.props.moveDown) {
       wrapperClass += ' move-down';
     }
-    if (library === 'H5P.CoursePresentation' || library === 'H5P.InteractiveVideo') {
+    if (library === 'H5P.CoursePresentationKID' || library === 'H5P.InteractiveVideo') {
       wrapperClass += ' inconspicuous';
     }
     const feedbackGroupClass = this.props.content.params.nextContentId !== -1 ? ' hide-score' : '';
@@ -423,7 +423,7 @@ export default class EditorOverlay extends React.Component {
         <div className={`editor-overlay-content${scoreClass}`}>
           <div className='editor-overlay-semantics' ref={ this.form }/>
           { !this.state.isSubFrom &&
-            
+
             <div>
               <BranchingOptions
                 isBranchingQuestion ={ this.isBranchingQuestion }

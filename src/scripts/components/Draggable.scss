@@ -135,7 +135,8 @@
     content: $icon-text;
   }
 
-  &.coursepresentation:before {
+  &.coursepresentation:before,
+  &.coursepresentationkid:before {
     content: $icon-presentation;
   }
 
