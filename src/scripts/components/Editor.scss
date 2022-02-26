@@ -5,7 +5,7 @@
   max-width: 960px;
 }
 .bswrapper {
-  font-family: 'H5PRoboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
 }
 
@@ -18,7 +18,7 @@
 .editor-overlay-content,
 #translate-interface > .tab-view-white-box,
 #metadata .h5p-metadata-wrapper {
-  font-family: "Open Sans",sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .h5peditor.h5p-branchingscenario-editor > .h5peditor-form {
@@ -129,6 +129,7 @@
   color: white;
   border: none;
   text-transform: uppercase;
+  font-family: inherit;
   font-size: 0.875em;
   font-weight: bold;
   padding: 0.47em 0.75em;
@@ -218,7 +219,7 @@
     .tour-dialog{
       top: 0;
       left: 126%;
-  
+
       &:after{
         left: 0;
         top: 2%;

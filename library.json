@@ -2,7 +2,7 @@
   "title": "Branching Scenario Editor",
   "description": "description",
   "majorVersion": 1,
-  "minorVersion": 4,
+  "minorVersion": 5,
   "patchVersion": 0,
   "runnable": 0,
   "author": "Joubel",
@@ -26,12 +26,12 @@
     {
       "machineName": "H5P.BranchingQuestion",
       "majorVersion": 1,
-      "minorVersion": 0
+      "minorVersion": 1
     },
     {
       "machineName": "H5P.BranchingScenario",
       "majorVersion": 1,
-      "minorVersion": 7
+      "minorVersion": 8
     },
     {
       "machineName": "H5P.CoursePresentation",
@@ -41,12 +41,12 @@
     {
       "machineName": "H5P.CoursePresentationKID",
       "majorVersion": 1,
-      "minorVersion": 24
+      "minorVersion": 25
     },
     {
       "machineName": "H5P.AdvancedText",
       "majorVersion": 1,
-      "minorVersion": 1
+      "minorVersion": 2
     },
     {
       "machineName": "H5P.Image",
@@ -56,17 +56,17 @@
     {
       "machineName": "H5P.ImageHotspots",
       "majorVersion": 1,
-      "minorVersion": 9
+      "minorVersion": 10
     },
     {
       "machineName": "H5P.InteractiveVideo",
       "majorVersion": 1,
-      "minorVersion": 22
+      "minorVersion": 23
     },
     {
       "machineName": "H5P.Video",
       "majorVersion": 1,
-      "minorVersion": 5
+      "minorVersion": 6
     }
   ]
 }
